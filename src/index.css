@@ -107,3 +107,8 @@ section span {
 .line {
   text-decoration: line-through;
 }
+img{
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+}

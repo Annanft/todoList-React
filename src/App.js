@@ -4,6 +4,8 @@ import { useState } from 'react';
 import List from './components/List';
 import { nanoid } from 'nanoid';
 import { ToastContainer, toast } from 'react-toastify';
+import panda from './panda.png'
+
 
 const local = (item) => {
   localStorage.setItem('list', JSON.stringify(item));
@@ -49,7 +51,9 @@ function App() {
     <main>
       <h1>Simple todo list</h1>
       <div className="container">
+        
         <Form addItem={addItem} />
+         {item.length === 0 && <img src={panda} alt="" />}
         <List item={item} removeItem={removeItem} edit={edit} />
         <ToastContainer />
       </div>
