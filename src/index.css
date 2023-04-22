@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(233, 233, 233);
+  color: rgb(32, 30, 30);
+}
+
+.container {
+  width: 80vw;
+  max-width: 600px;
+  margin: 5rem auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.list-container {
+  width: 95%;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  letter-spacing: 2px;
+  color: rgb(93, 91, 91);
+}
+form {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+form input {
+  padding: 5px 10px;
+  font-size: 1rem;
+  width: 70%;
+  border: none;
+  border-bottom: 2px solid silver;
+  outline: none;
+}
+
+form button {
+  padding: 6px 16px;
+  border: none;
+  background-color: rgb(84, 211, 95);
+  margin-left: 1rem;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: 0.1s linear;
+  letter-spacing: 2px;
+}
+form button:hover {
+  background-color: rgb(40, 174, 51);
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed silver;
+}
+section div {
+  display: flex;
+}
+section div input {
+  margin-right: 0.5rem;
+}
+section button {
+  border: none;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgb(235, 96, 96);
+}
+section button:hover {
+  color: rgb(221, 1, 1);
+}
+section div p {
+  font-size: 1.5rem;
+  color: rgb(103, 102, 102);
+}
+section div input {
+  cursor: pointer;
+  color: blue;
+}
+
+section span {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 500px) {
+  form input {
+    width: 50%;
+  }
+  section div p {
+    font-size: 1rem;
+  }
+}
+.line {
+  text-decoration: line-through;
+}
